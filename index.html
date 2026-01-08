@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>중간과제</title>
+    <link rel='stylesheet' href='https://cdn.tailwindcss.com'><link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Interactive Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-gray-100">
+
+  <!-- 🌟 NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/40 border-b border-white/10">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold tracking-widest text-purple-400 hover:text-pink-400 transition">
+        MY SPACE
+      </h1>
+
+      <div class="flex gap-6 text-sm font-semibold">
+        <a href="#home" class="hover:text-purple-400 transition">HOME</a>
+        <a href="#about" class="hover:text-purple-400 transition">ABOUT</a>
+        <a href="#skills" class="hover:text-purple-400 transition">SKILLS</a>
+        <a href="#projects" class="hover:text-purple-400 transition">PROJECTS</a>
+        <a href="#contact" class="hover:text-purple-400 transition">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 🪐 HERO -->
+  <section id="home" class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        안녕하세요,<br>
+        <span class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+          한림대학교 학생
+        </span><br>
+        홍승욱입니다.
+      </h2>
+
+      <p class="mt-6 text-gray-400 leading-relaxed">
+        한림대학교에서 웹 코딩 공부를<br>
+        하고 있는 <span class="text-purple-400">21학번 코린이 입니다, </span> 저를 소개합니다 
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#projects"
+          class="px-6 py-3 rounded-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500
+                 hover:scale-110 hover:shadow-[0_0_30px_rgba(236,72,153,0.6)]
+                 transition-all duration-300">
+          프로젝트 보기
+        </a>
+
+        <a href="#contact"
+          class="px-6 py-3 rounded-xl font-semibold border border-white/20
+                 hover:bg-white hover:text-black hover:scale-105 transition">
+          연락하기
+        </a>
+      </div>
+    </div>
+
+    <!-- 프로필 카드 -->
+    <div
+      class="relative group w-72 h-72 mx-auto rounded-3xl bg-gradient-to-br from-purple-500 to-pink-500 p-1
+             hover:rotate-3 hover:scale-105 transition-all duration-500">
+     <img
+    src="https://blogpfthumb-phinf.pstatic.net/MjAyMzAzMTlfMjE3/MDAxNjc5MTg3NzA5MjA4.7jVLuWy8jQ3EwKEDqr913CYMYzGec5TvFVfaXadDAC8g.DN35CFSApiu8hq9WDdDXBCap82oNRunCcgQJvL_2h80g.PNG.tmddnr7471/profileImage.png?type=w161"
+    alt="내 프로필 사진"
+    class="w-full h-full object-cover rounded-3xl
+           group-hover:scale-110 transition duration-500" />
+
+        ME
+      </div>
+      <span
+        class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100
+               bg-purple-500/20 blur-2xl transition"></span>
+    </div>
+  </section>
+
+  <!-- 👤 ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-8 text-purple-400">About Me</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div
+        class="p-6 rounded-2xl bg-white/5 border border-white/10
+               hover:-translate-y-2 hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">🎓 Education</h4>
+        <p class="text-sm text-gray-400">
+          한림대학교 재학<br>
+          융합과학수사학과 전공
+        </p>
+      </div>
+
+      <div
+        class="p-6 rounded-2xl bg-white/5 border border-white/10
+               hover:-translate-y-2 hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">🔥 Interest</h4>
+        <p class="text-sm text-gray-400">
+          경찰학 공부<br>
+          운동하기<br>
+        </p>
+      </div>
+
+      <div
+        class="p-6 rounded-2xl bg-white/5 border border-white/10
+               hover:-translate-y-2 hover:shadow-xl transition">
+        <h4 class="font-semibold text-lg mb-2">🚀 Goal</h4>
+        <p class="text-sm text-gray-400">
+          하루를 소중하게 생각하고 <br>
+          성실하게 살아가는 사람
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧠 SKILLS -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-10 text-purple-400">Skills</h3>
+
+    <div class="flex flex-wrap gap-4">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Tailwind</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
+
+  <!-- 🧩 PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-10 text-purple-400">Projects</h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <article
+        class="p-6 rounded-2xl bg-white/5 border border-white/10
+               hover:scale-105 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+               transition-all">
+        <h4 class="text-xl font-semibold">🧮 Calculator</h4>
+        <p class="mt-2 text-gray-400 text-sm">
+          JavaScript로 구현한 계산기 페이지
+        </p>
+        
+      
+   <button
+  onclick="openCalculator()"
+  class="inline-block mt-4 px-5 py-2 rounded-lg text-sm font-semibold
+         bg-gradient-to-r from-purple-500 to-pink-500
+         hover:scale-110 hover:shadow-[0_0_25px_rgba(236,72,153,0.6)]
+         transition">
+  계산기 열기 →
+</button>
+        
+    
+
+
+      </article>
+
+      <article
+        class="p-6 rounded-2xl bg-white/5 border border-white/10
+               hover:scale-105 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]
+               transition-all">
+        <h4 class="text-xl font-semibold">🙋 Portfolio</h4>
+        <p class="mt-2 text-gray-400 text-sm">
+          자기소개 및 인터랙션 중심 포트폴리오
+        </p>
+        
+  <button 
+  onclick="openProfile()"
+  class="inline-block mt-4 px-5 py-2 rounded-lg text-sm font-semibold
+         bg-gradient-to-r from-blue-500 to-cyan-500
+         hover:scale-110 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]
+         transition">
+  자기소개 보기 →
+</button>
+
+      </article>
+    </div>
+  </section>
+
+  <!-- 📬 CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-6 text-purple-400">Contact</h3>
+
+    <form class="max-w-md space-y-4">
+      <input
+        class="w-full p-3 rounded-lg bg-black border border-white/10
+               focus:ring-2 focus:ring-purple-500 outline-none"
+        placeholder="Email" />
+      <textarea
+        class="w-full p-3 rounded-lg bg-black border border-white/10 resize-none
+               focus:ring-2 focus:ring-purple-500 outline-none"
+        rows="4"
+        placeholder="Message"></textarea>
+      <button
+        class="w-full py-3 rounded-lg font-semibold
+               bg-gradient-to-r from-purple-500 to-pink-500
+               hover:scale-105 transition">
+        Send
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2026 홍승욱 Portfolio
+  </footer>
+
+  <!-- Skill badge style -->
+  <style>
+    .skill {
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      background: linear-gradient(to right, #a855f7, #ec4899);
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill:hover {
+      transform: scale(1.15) rotate(-2deg);
+      box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+    }
+  </style>
+
+<!-- ================= 계산기 화면 ================= -->
+<div id="calculatorScreen"
+     class="fixed inset-0 bg-gray-200 z-[999] hidden overflow-auto">
+
+  <div class="p-4">
+    <button
+      onclick="closeCalculator()"
+      class="px-4 py-2 rounded-lg font-semibold
+             bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+      ← 뒤로가기
+    </button>
+  <div class="flex justify-center p-3 sm:p-6 bg-gray-100">
+
+  <div class="w-full max-w-[420px] bg-white rounded-xl shadow-sm border border-gray-200">
+    <div class="p-4 sm:p-5">
+      <h5 class="text-center mb-3 text-base sm:text-lg font-bold text-gray-900">
+  Calculator (Tailwind)
+</h5>
+
+      <input id="display" type="text"
+  class="w-full text-right text-xl sm:text-2xl px-3 sm:px-4 py-2 sm:py-3
+         mb-3 rounded-lg border border-gray-400 bg-white
+         text-gray-900 font-bold
+         focus:outline-none
+         read-only:text-gray-900"
+  value="0" readonly />
+      <div class="keys grid grid-cols-4 gap-2 sm:gap-3">
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="7">7</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="8">8</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="9">9</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="÷">÷</button>
+
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="4">4</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="5">5</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="6">6</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="×">×</button>
+
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="1">1</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="2">2</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-gray-600 text-gray-700 hover:bg-blue-50" data-key="3">3</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="-">-</button>
+
+        <button class="col-span-2 h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-gray-700 hover:bg-blue-50" data-key="0">0</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 bg-yellow-400 text-gray-900 font-semibold hover:bg-yellow-500" data-key="C">C</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 bg-green-600 text-white font-semibold hover:bg-green-700" data-key="=">=</button>
+        <button class="h-10 sm:h-11 text-sm sm:text-base rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100" data-key="+">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- ================= 자기소개 화면 ================= -->
+<div id="profileScreen"
+     class="fixed inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-black
+            z-[999] hidden overflow-auto text-gray-100">
+
+  <!-- 뒤로가기 -->
+  <div class="p-4">
+    <button
+      onclick="closeProfile()"
+      class="px-4 py-2 rounded-lg font-semibold
+             bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
+      ← 뒤로가기
+    </button>
+  </div>
+
+  <!-- 내용 -->
+  <div class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold mb-6 text-center
+               bg-gradient-to-r from-blue-400 to-cyan-400
+               bg-clip-text text-transparent">
+      About Me
+    </h2>
+
+    <p class="text-center text-gray-400 mb-12">
+      저를 조금 더 자세히 소개합니다
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+        <h3 class="text-xl font-semibold mb-3">👤 Who I Am</h3>
+        <p class="text-gray-400 leading-relaxed">
+          안녕하세요, 한림대학교에 재학 중인 홍승욱입니다.<br>
+          웹 개발을 처음 접한 코린이지만,<br>
+          하나씩 직접 만들면서 배우는 걸 좋아합니다.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+        <h3 class="text-xl font-semibold mb-3">🔥 Strength</h3>
+        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+          <li>포기하지 않고 끝까지 해보는 성격</li>
+          <li>새로운 기술에 대한 호기심</li>
+          <li>직접 만들면서 이해하는 스타일</li>
+        </ul>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+        <h3 class="text-xl font-semibold mb-3">🎯 Goal</h3>
+        <p class="text-gray-400 leading-relaxed">
+          웹 개발 실력을 차근차근 키워서<br>
+          제 생각을 화면으로 구현할 수 있는 사람이 되는 것이 목표입니다.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+        <h3 class="text-xl font-semibold mb-3">🛠 Interest</h3>
+        <p class="text-gray-400 leading-relaxed">
+          JavaScript · UI 인터랙션 · 애니메이션<br>
+          그리고 “버튼 누르면 뭔가 바뀌는 화면”
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const display = document.getElementById("display");
+  const keys = document.querySelectorAll("#calculatorScreen button[data-key]");
+
+  let current = "0";
+  let previous = null;
+  let operator = null;
+  let resetNext = false;
+
+  function updateDisplay() {
+    display.value = current;
+  }
+
+  function calculate(a, b, op) {
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    if (op === "+") return a + b;
+    if (op === "-") return a - b;
+    if (op === "×") return a * b;
+    if (op === "÷") return b === 0 ? 0 : a / b;
+    return b;
+  }
+
+  keys.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.key;
+
+      if (!isNaN(key)) {
+        if (current === "0" || resetNext) {
+          current = key;
+          resetNext = false;
+        } else {
+          current += key;
+        }
+        updateDisplay();
+        return;
+      }
+
+      if (key === "C") {
+        current = "0";
+        previous = null;
+        operator = null;
+        resetNext = false;
+        updateDisplay();
+        return;
+      }
+
+      if (["+", "-", "×", "÷"].includes(key)) {
+        if (operator && previous !== null && !resetNext) {
+          current = String(calculate(previous, current, operator));
+          updateDisplay();
+        }
+        previous = current;
+        operator = key;
+        resetNext = true;
+        return;
+      }
+
+      if (key === "=") {
+        if (operator && previous !== null) {
+          current = String(calculate(previous, current, operator));
+          previous = null;
+          operator = null;
+          resetNext = true;
+          updateDisplay();
+        }
+      }
+    });
+  });
+
+  // 🔽 이 함수들이 버튼이랑 연결됨
+  window.openCalculator = function () {
+    document.getElementById("calculatorScreen").classList.remove("hidden");
+  }
+
+  window.closeCalculator = function () {
+    document.getElementById("calculatorScreen").classList.add("hidden");
+  }
+  
+   window.openProfile = function () {
+    document.getElementById("profileScreen").classList.remove("hidden");
+  }
+
+  window.closeProfile = function () {
+    document.getElementById("profileScreen").classList.add("hidden");
+  }
+  
+
+  updateDisplay();
+});
+</script>
+
+   
+
+
+
+</body>
+</html>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,9 @@
+.wrap { padding: 16px; }
+
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.keys button{ height: 56px; font-size: 20px; }
+.wide{ grid-column: span 2; }
